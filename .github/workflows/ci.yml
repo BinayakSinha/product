@@ -29,6 +29,9 @@ jobs:
       - name: Linting
         run: npm run lint
 
+      - name: Unit Tests
+        run: npm run test
+
       - name: Production Build Verification
         env:
           VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
